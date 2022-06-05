@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="section-pizza">
+            <h2 class="pizza-title" >Pizza</h2>
+            <div class="col-container"> 
+
+                <div class="item-container">
+                    <input type="radio" name="pizza" id="pizza_name1" class="item-radio pizza-item" onclick="getPizza(1);">
+                    <label for="pizza_name1" class="item-label">
+                        <div class="item-variant">
+                            <img src="https://source.unsplash.com/150x150?pizza" alt="pizza1" >
+                            <h4>Pizza 1</h4>
+                            <span>$8</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item-container">
+                    <input type="radio" name="pizza" id="pizza_name2" class="item-radio pizza-item" onclick="getPizza(2);">
+                    <label for="pizza_name2" class="item-label">
+                        <div class="item-variant">
+                            <img src="https://source.unsplash.com/150x150?pizzas" alt="pizza2" >
+                            <h4>Pizza 2</h4>
+                            <span>$10</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item-container">
+                    <input type="radio" name="pizza" id="pizza_name3" class="item-radio pizza-item" onclick="getPizza(3);">
+                    <label for="pizza_name3" class="item-label">
+                        <div class="item-variant">
+                            <img src="https://source.unsplash.com/150x150?pizza-italian" alt="pizza3" >
+                            <h4>Pizza 3</h4>
+                            <span>$12</span>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section-size">
+            <h2 class="size-title" >Size</h2>
+            <div class="col-container"> 
+
+                <div class="item-container">
+                    <input type="radio" name="size" id="size-small" class="item-radio" onclick="getSize(1);">
+                    <label for="size-small" class="item-label">
+                        <div class="item-variant">
+                            <h4>Small</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item-container">
+                    <input type="radio" name="size" id="size-medium" class="item-radio" onclick="getSize(2);">
+                    <label for="size-medium" class="item-label">
+                        <div class="item-variant">
+                            <h4>Medium</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item-container">
+                    <input type="radio" name="size" id="size-large" class="item-radio" onclick="getSize(3);">
+                    <label for="size-large" class="item-label">
+                        <div class="item-variant">
+                            <h4>Large</h4>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section-toppings">
+
+            <h2 class="toppings-title" >Toppings</h2>
+
+            <div class="toppings-container">
+
+                <div class="toppings">
+                    <input type="checkbox" name="avocado" id="avocado" class="toppings-item" onclick="getToppings(1)">
+                    <label for="avocado" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Avocado</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="lobster" id="lobster" class="toppings-item" onclick="getToppings(2)">
+                    <label for="lobster" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Lobster</h4>
+                        </div>    
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="bacon" id="bacon" class="toppings-item"  onclick="getToppings(3)">
+                    <label for="bacon" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Bacon</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="broccoli" id="broccoli" class="toppings-item"  onclick="getToppings(1)">
+                    <label for="broccoli" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Broccoli</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="oyster" id="oyster" class="toppings-item"  onclick="getToppings(2)">
+                    <label for="oyster" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Oyster</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="duck" id="duck" class="toppings-item"  onclick="getToppings(3)">
+                    <label for="duck" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Duck</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="onions" id="onions" class="toppings-item"  onclick="getToppings(1)">
+                    <label for="onions" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Onions</h4>
+                        </div>
+                    </label>
+                </div>
+
+
+                <div class="toppings">
+                    <input type="checkbox" name="salmon" id="salmon" class="toppings-item"  onclick="getToppings(2)">
+                    <label for="salmon" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Salmon</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="ham" id="ham" class="toppings-item"  onclick="getToppings(3)">
+                    <label for="ham" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Ham</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="zucchini" id="zucchini" class="toppings-item"  onclick="getToppings(1)">
+                    <label for="zucchini" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Zucchini</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="tuna" id="tuna" class="toppings-item"  onclick="getToppings(2)">
+                    <label for="tuna" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Tuna</h4>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="toppings">
+                    <input type="checkbox" name="sausage" id="sausage" class="toppings-item"  onclick="getToppings(3)">
+                    <label for="sausage" class="item-label"> 
+                        <div class="item-variant">
+                            <h4>Sausage</h4>
+                        </div>
+                    </label>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2 class="toppings-title" >Price: </h2>
+            <div class="total-price">
+                $<span id="total-price">0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<footer>
+    <script src="/script.js"></script>
+
+</footer>
+</html>
